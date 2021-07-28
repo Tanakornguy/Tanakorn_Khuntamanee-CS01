@@ -7,6 +7,9 @@ from tkPDFViewer import tkPDFViewer as pdf
 root = Tk()
 root.title('ข้อสอบ GAT ENG 63')
 
+#ปุ่มเริ่มทำข้อสอบ
+button_do = Button(root, text='Start Exam', padx=50)
+button_do.pack()
 #ปุ่มออกจากหน้าทำข้อสอบ
 button_quit = Button(root, text='Exit Test', command=root.quit)
 button_quit.pack()
@@ -20,6 +23,7 @@ v1 = pdf.ShowPdf()
 v2 = v1.pdf_view(root,
                  pdf_location = r"GATEng63E.pdf", 
                  width = 75, height = 50)
+
 v2.pack()
 
 root.mainloop()
