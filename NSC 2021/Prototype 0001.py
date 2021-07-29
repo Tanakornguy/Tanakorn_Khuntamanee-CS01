@@ -23,7 +23,6 @@ v1 = pdf.ShowPdf()
 v2 = v1.pdf_view(root,
                  pdf_location = r"GATEng63E.pdf", 
                  width = 75, height = 50)
-
 v2.pack()
 
 root.mainloop()
