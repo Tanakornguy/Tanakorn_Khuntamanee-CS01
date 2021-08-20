@@ -153,6 +153,7 @@ plt.legend(['Pre-test','maximum point'],loc=(0.95,0.8))
 
 plt.title('Pre-test results',size='18')
 lines, labels = plt.thetagrids(np.degrees(label_loc),labels=categories)
+plt.text("กายหล่อมาก", size='18')
 plt.show()
 
 print('\n')
